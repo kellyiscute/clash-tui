@@ -1,0 +1,20 @@
+{
+  "name": "clash-tui",
+  "version": "1.0.0",
+  "description": "A clash TUI",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -p ."
+  },
+  "author": "Kelly",
+  "license": "MIT",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/blessed": "^0.1.19",
+    "axios": "^0.21.4",
+    "blessed": "^0.1.81",
+    "typescript": "^4.4.3",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
