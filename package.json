@@ -4,7 +4,8 @@
   "description": "A clash TUI",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc -p ."
+    "tsc": "tsc -p . --outDir build/",
+    "test": "yarn tsc -p . --outDir build/ && node build/tests/request-manager.js"
   },
   "author": "Kelly",
   "license": "MIT",

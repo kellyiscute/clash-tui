@@ -1,8 +1,9 @@
-type IProxyType = "Direct" | "Reject" | "Selector" | "Shadowsocks" | "Socks5" | "URLTest";
+type IProxyType = "Direct" | "Reject" | "Selector" | "Shadowsocks" | "ShadowsocksR" | "Vmess" | "Trojan" | "Socks5" | "URLTest";
 
 export interface IProxy {
   type: IProxyType;
   all?: IProxy[];
+  name?: string;
   now?: string;
 }
 
@@ -11,7 +12,6 @@ export interface IProxies {
     type: "Direct";
   };
   "GLOBAL": IProxy;
-  "Proxy": IProxy;
   "REJECT": {
     type: "Reject";
   };
